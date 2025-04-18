@@ -8,6 +8,9 @@ Where n is the number of rows in the triangle.
 
 def pascal_triangle(n):
     """Returns a list of lists of integers."""
+    if n <= 0:
+        return []
+
     res = [[1]]
 
     for i in range(n - 1):
