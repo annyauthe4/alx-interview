@@ -17,7 +17,6 @@ def is_safe(queens, row, col):
 def solve_nqueens(n):
     solutions = []
 
-
     def backtrack(row, queens):
         if row == n:
             solution = [[r, queens[r]] for r in range(n)]
