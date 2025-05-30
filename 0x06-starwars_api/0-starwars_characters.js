@@ -19,7 +19,7 @@ request(apiUrl, (error, response, body) => {
   printCharacters(characters, 0);
 });
 
-function printCharacters(list, index) {
+function printCharacters (list, index) {
   if (index >= list.length) return;
 
   request(list[index], (err, res, body) => {
